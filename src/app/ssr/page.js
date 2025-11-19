@@ -5,9 +5,9 @@ export default function ServerTimePage() {
         // This code runs on the server for every request
         const serverTime = new Date().toISOString();
         
-        // Generate random 6 MB text
+        // Generate random 8 MB text
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ';
-        const targetSize = 6 * 1024 * 1024; // 6 MB
+        const targetSize = 8 * 1024 * 1024; // 8 MB
         let randomText = '';
         for (let i = 0; i < targetSize; i++) {
             randomText += chars.charAt(Math.floor(Math.random() * chars.length));
