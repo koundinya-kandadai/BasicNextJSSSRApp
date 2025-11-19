@@ -15,8 +15,9 @@ export default function ServerTimePage() {
     console.log(`[SSR] Page rendered at: ${serverTime}}`);
     return (
         <div>
-            <h1>Current server time: <span>{serverTime}</span></h1>
+            <h1>The Current server time: <span>{serverTime}</span></h1>
             <p style={{ display: 'none' }}>{randomText}</p>
         </div>
     );
 }
+
